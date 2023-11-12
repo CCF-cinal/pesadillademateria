@@ -1,0 +1,15 @@
+
+div{
+    color: chartreuse;
+}
+.segundodiv{
+    background: #F23B00;
+    height:300px;
+    width:300px;
+    padding: 50px;
+}
+.hijo{
+    height: 100px;
+    width: 100px;
+    background: black;
+}
