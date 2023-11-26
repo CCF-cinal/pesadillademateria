@@ -1,0 +1,292 @@
+:root {
+    --blue: rgb(61, 155, 233);
+    --white: rgb(250, 250, 250);
+    --black: rgb(36, 35, 35);
+    --red: rgb(255, 97, 97);
+    --lBlue: rgb(217,229,238);
+}
+
+@font-face {
+  font-family: brandFont;
+  src: url('../font/PermanentMarker-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-blue {
+    background-color: var(--blue);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.bg-red {
+    background-color: var(--red);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-light-blue {
+    background-color: var(--lBlue);
+}
+
+.c-blue {
+    color: var(--blue);
+}
+
+.c-black {
+    color: var(--black);
+}
+
+.c-red {
+    color: var(--red);
+}
+
+.c-white {
+    color: var(--white);
+}
+
+.c-light-blue {
+    color: var(--lBlue);
+}
+
+body {
+    background-color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-columns{
+    flex-direction: column;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.inner-container {
+    width: 70%;
+    min-width: 1000px;
+    padding-bottom: 20px;   
+}
+
+.section-title {
+    width: 70%;
+    min-width: 1000px;
+    font-family: "brandFont";
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+hr.separator-blue {
+    width: 90%;
+    margin-bottom: 20px;
+    border: 6px solid var(--blue);
+    border-radius: 5px;
+    color: var(--blue);
+}
+
+hr.separator-black {
+    width: 90%;
+    margin-bottom: 20px;
+    border: 6px solid var(--black);
+    border-radius: 5px;
+    color: var(--black);
+}
+
+hr.separator-white {
+    width: 90%;
+    margin-bottom: 20px;
+    border: 6px solid var(--white);
+    border-radius: 5px;
+    color: var(--white);
+}
+
+hr.separator-light-blue {
+    width: 90%;
+    margin-bottom: 20px;
+    border: 6px solid var(--lBlue);
+    border-radius: 5px;
+    color: var(--lBlue);
+}
+
+hr.separator-red {
+    width: 90%;
+    margin-bottom: 20px;
+    border: 6px solid var(--red);
+    border-radius: 5px;
+    color: var(--red);
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-container a{
+    text-decoration: none;
+}
+
+.card {
+    flex-basis: 25%;
+    height: 300px;
+    text-align: center;
+    padding: 20px;
+}
+
+.hoverable:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.big-card {
+    flex-grow: 1;
+    height: 500px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.card img {
+    height: 50%;
+    margin-bottom: 15px;
+    max-width: 210px;
+}
+
+.big-card img {
+    height: 90%;
+    margin-right: 30px;
+    width: 50%;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.big-card-title {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.big-card-button {
+    text-decoration: none;
+    color: var(--white);
+    border: 2px solid var(--blue);
+    margin: 20px;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+    padding: 5px;
+    width: 100px;
+    display: block;
+}
+
+.big-card-button:hover {
+    background: var(--blue);
+    border: 2px solid var(--black);
+}
+
+/*Header styles*/
+.navbar {
+    background-color: var(--blue);
+    width: 100%;
+    height: 3.5rem;
+    position: fixed;
+    z-index: 2;
+}
+
+.nav-link {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: var(--black)
+}
+
+.context-menu {
+    position: absolute;
+    background-color: var(--blue);
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 3.5rem;
+}
+
+.context-menu a {
+    display: block;
+    margin: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.menu-item {
+    height: 100%;
+    width: 150px;
+    padding-top: 1.2rem;
+    text-align: center;
+}
+
+.logo {
+    flex-direction: column;
+}
+
+.brand-name {
+    color: var(--blue);
+    font-family: "brandFont";
+    font-size: 2.5rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+.brand-moto {
+    color: var(--black);
+    margin-bottom: 1rem;;
+}
+
+/*Footer styles*/
+.footer {
+    display: flex;
+    justify-content:space-around;
+    padding: 50px;
+    background-color: var(--lBlue);
+    
+}
+
+.footer-section a{
+    margin-top: 10px;
+    display: block;
+}
+
+.footer-section {
+    flex-basis: 15%;
+}
+
+.footer-section p{
+    margin-top: 10px;
+}

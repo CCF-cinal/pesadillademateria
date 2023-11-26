@@ -1,0 +1,55 @@
+@import url("generalStyles.css");
+
+.schedule-day{
+    margin: 20px;
+    text-align: center;
+    color: var(--black);
+}
+
+.schedule-frame{
+    background-color: var(--lBlue);
+    border: 2px solid var(--blue);
+    margin: 10px;
+}
+
+.schedule{
+    flex-direction: column;
+    
+}
+
+.contact{
+    flex-direction: column;
+}
+
+.contact-form{
+    flex-wrap: wrap;
+}
+
+.name , .email{
+    flex-basis: 40%;
+    margin-top: 10px;
+    background-color: var(--lBlue);
+    height: 30px;
+}
+
+.subject, .message, .submit{
+    flex-basis: 80%;
+    margin-top: 10px;
+    background-color: var(--lBlue);
+}
+
+.subject {
+    height: 30px;
+}
+
+.message {
+    height: 90px;
+    resize: none;
+}
+
+.submit{
+    background-color: var(--red);
+    height: 30px;
+    font-weight: bolder;
+}
+
